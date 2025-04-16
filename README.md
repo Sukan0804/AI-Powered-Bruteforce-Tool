@@ -20,7 +20,7 @@ pip install paramiko requests
 
 ▶️ How to Run:-
 Clone the repo:
-git clone https://github.com/yourusername/ai-bruteforce-tool.git
+git clone https://github.com/sukan0804/AI-Powered-Bruteforce-Tool.git
 cd ai-bruteforce-tool
 
 Train your AI model (optional):
