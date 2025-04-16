@@ -1,36 +1,54 @@
-# AI-Powered-Bruteforce-Tool
-A Python-based brute-force attack simulation tool that integrates AI-driven password generation using a Markov model. It features a simple GUI built with Tkinter and supports brute-force attempts over FTP, SSH, and HTTP login forms — all executed in parallel using multithreading.
-🚀 Features:-
-🎯 Supports FTP, SSH, and HTTP brute-force attacks.
-🧠 AI-powered password guessing using a trained Markov Chain model.
-💻 Built with Python 3 and a beginner-friendly GUI (Tkinter).
-🔁 Uses multithreading for faster, parallel execution.
-📜 Real-time output logs in a scrollable text window.
-📦 Lightweight and portable — no database or heavy framework required.
+🧠 AI-Powered Brute-Force Attack Tool
+A Python-based brute-force attack simulation tool designed for ethical hacking education and research. This tool uses a Markov Chain AI model to generate intelligent password guesses and attempts logins over FTP, SSH, and HTTP protocols — all through a simple and user-friendly GUI.
 
-🧠 How AI is Used:-
-Trained on common password datasets (like rockyou.txt).
-Uses 2-character state transitions to predict next characters.
-Generates smart password guesses that mimic real user behavior.
+🔒 Disclaimer: This project is for educational use only. Never use this tool on systems you don’t own or have explicit permission to test.
 
-🛠️ Requirements:-
-Python 3.8+
-Libraries:
-pip install paramiko requests
+📌 Features
+🧠 AI-based Password Generation using a Markov model.
 
-▶️ How to Run:-
-Clone the repo:
-git clone https://github.com/sukan0804/AI-Powered-Bruteforce-Tool.git
+⚡ Multithreaded Brute-Force Engine supporting:
+
+FTP (via ftplib)
+
+SSH (via paramiko)
+
+HTTP form-based login (via requests)
+
+🖥️ Tkinter GUI for inputs and real-time result display.
+
+🗃️ Modular and Lightweight – easy to customize and expand.
+
+🛠️ Installation
+Clone the Repository
+git clone https://github.com/Sukan0804/AI-Powered-Bruteforce-Tool.git
 cd ai-bruteforce-tool
 
-Train your AI model (optional):
+Install Dependencies:
+pip install paramiko requests
+
+Train your own Markov model:
 python3 train_model.py
 
-Run the GUI tool:
+Run the Tool:
 python3 bruteforce_tool.py
 
-📘 Ethical Usage
-This tool is intended solely for educational use, research, and ethical penetration testing. Do not use this tool to attack any system without written authorization. Unauthorized use of brute-force tools may be illegal in your country or violate your organization’s policies.
+🧪 How It Works
+You input a Target IP, Username, and optionally a login URL.
+
+The tool uses a pre-trained Markov model to generate smart password guesses.
+
+It launches parallel brute-force attacks on FTP, SSH, and HTTP services.
+
+The GUI displays real-time logs of all attempts.
 
 
+⚖️ Ethical Use
+This tool is strictly intended for:
 
+Educational demonstrations
+
+Penetration testing on authorized systems
+
+Academic projects and CTF environments
+
+Unauthorized use may be illegal. Use responsibly. 🚨
